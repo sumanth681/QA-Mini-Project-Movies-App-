@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Movies_App_Test" class="navigator-link">
+              <span class="suite-name border-passed">Movies App Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Movies_App_Test" class="navigator-link ">
+                    <span>C:\Users\admin\IdeaProjects\Movies-App-Test\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Movies_App_Test" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Movies_App_Test" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Movies_App_Test" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Movies_App_Test" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Movies_App_Test" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Movies_App_Test" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Movies_App_Test" class="hide-methods passed suite-Movies_App_Test"> (hide)</a> <!-- hide-methods passed suite-Movies_App_Test -->
+                      <a href="#" panel-name="suite-Movies_App_Test" class="show-methods passed suite-Movies_App_Test"> (show)</a> <!-- show-methods passed suite-Movies_App_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Movies_App_Test">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="SearchPageTest" class="method navigator-link" hash-for-method="CheckSearchFunctionality">CheckSearchFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="AccountPageTest" class="method navigator-link" hash-for-method="checkAccountPage">checkAccountPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="HomePageTest" class="method navigator-link" hash-for-method="checkContact">checkContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="MovieDetailsTest" class="method navigator-link" hash-for-method="checkHomePageFuctionalities">checkHomePageFuctionalities</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="LoginPageTest" class="method navigator-link" hash-for-method="checkLoginButton">checkLoginButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="HomePageTest" class="method navigator-link" hash-for-method="checkMoviesDisplay">checkMoviesDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="HomePageTest" class="method navigator-link" hash-for-method="checkPlayBtn">checkPlayBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="MovieDetailsTest" class="method navigator-link" hash-for-method="checkPopularPageFuctionalities">checkPopularPageFuctionalities</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="PopularPageTest" class="method navigator-link" hash-for-method="checkPopularPageMovies">checkPopularPageMovies</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="PopularPageTest" class="method navigator-link" hash-for-method="checkPopularPageSection">checkPopularPageSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="LoginPageTest" class="method navigator-link" hash-for-method="checkTheHeadingText">checkTheHeadingText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="HomePageTest" class="method navigator-link" hash-for-method="checkTheHeadingTexts">checkTheHeadingTexts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="LoginPageTest" class="method navigator-link" hash-for-method="checkTheLabelElementTexts">checkTheLabelElementTexts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="LoginPageTest" class="method navigator-link" hash-for-method="checkTheLogo">checkTheLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="HeaderPageTest" class="method navigator-link" hash-for-method="checkTheLogoElement">checkTheLogoElement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="HeaderPageTest" class="method navigator-link" hash-for-method="checkTheNavBars">checkTheNavBars</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="LoginPageTest" class="method navigator-link" hash-for-method="testLoginWithEmptyInputs">testLoginWithEmptyInputs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="LoginPageTest" class="method navigator-link" hash-for-method="testLoginWithEmptyPassword">testLoginWithEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="LoginPageTest" class="method navigator-link" hash-for-method="testLoginWithEmptyUserName">testLoginWithEmptyUserName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="LoginPageTest" class="method navigator-link" hash-for-method="testLoginWithInvalidCredentials">testLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Movies_App_Test" title="LoginPageTest" class="method navigator-link" hash-for-method="testLoginWithValidCredentials">testLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Movies_App_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Movies_App_Test" class="panel Movies_App_Test">
+          <div class="suite-Movies_App_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">PopularPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPopularPageMovies">
+                  </a> <!-- checkPopularPageMovies -->
+                  <span class="method-name">checkPopularPageMovies</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPopularPageSection">
+                  </a> <!-- checkPopularPageSection -->
+                  <span class="method-name">checkPopularPageSection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Movies_App_Test-class-passed -->
+          <div class="suite-Movies_App_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">HeaderPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTheLogoElement">
+                  </a> <!-- checkTheLogoElement -->
+                  <span class="method-name">checkTheLogoElement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTheNavBars">
+                  </a> <!-- checkTheNavBars -->
+                  <span class="method-name">checkTheNavBars</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Movies_App_Test-class-passed -->
+          <div class="suite-Movies_App_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MovieDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkHomePageFuctionalities">
+                  </a> <!-- checkHomePageFuctionalities -->
+                  <span class="method-name">checkHomePageFuctionalities</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPopularPageFuctionalities">
+                  </a> <!-- checkPopularPageFuctionalities -->
+                  <span class="method-name">checkPopularPageFuctionalities</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Movies_App_Test-class-passed -->
+          <div class="suite-Movies_App_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLoginButton">
+                  </a> <!-- checkLoginButton -->
+                  <span class="method-name">checkLoginButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTheHeadingText">
+                  </a> <!-- checkTheHeadingText -->
+                  <span class="method-name">checkTheHeadingText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTheLabelElementTexts">
+                  </a> <!-- checkTheLabelElementTexts -->
+                  <span class="method-name">checkTheLabelElementTexts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTheLogo">
+                  </a> <!-- checkTheLogo -->
+                  <span class="method-name">checkTheLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithEmptyInputs">
+                  </a> <!-- testLoginWithEmptyInputs -->
+                  <span class="method-name">testLoginWithEmptyInputs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithEmptyPassword">
+                  </a> <!-- testLoginWithEmptyPassword -->
+                  <span class="method-name">testLoginWithEmptyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithEmptyUserName">
+                  </a> <!-- testLoginWithEmptyUserName -->
+                  <span class="method-name">testLoginWithEmptyUserName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials">
+                  </a> <!-- testLoginWithInvalidCredentials -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithValidCredentials">
+                  </a> <!-- testLoginWithValidCredentials -->
+                  <span class="method-name">testLoginWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Movies_App_Test-class-passed -->
+          <div class="suite-Movies_App_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContact">
+                  </a> <!-- checkContact -->
+                  <span class="method-name">checkContact</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkMoviesDisplay">
+                  </a> <!-- checkMoviesDisplay -->
+                  <span class="method-name">checkMoviesDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPlayBtn">
+                  </a> <!-- checkPlayBtn -->
+                  <span class="method-name">checkPlayBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTheHeadingTexts">
+                  </a> <!-- checkTheHeadingTexts -->
+                  <span class="method-name">checkTheHeadingTexts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Movies_App_Test-class-passed -->
+          <div class="suite-Movies_App_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SearchPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckSearchFunctionality">
+                  </a> <!-- CheckSearchFunctionality -->
+                  <span class="method-name">CheckSearchFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Movies_App_Test-class-passed -->
+          <div class="suite-Movies_App_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AccountPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAccountPage">
+                  </a> <!-- checkAccountPage -->
+                  <span class="method-name">checkAccountPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Movies_App_Test-class-passed -->
+        </div> <!-- panel Movies_App_Test -->
+        <div panel-name="test-xml-Movies_App_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\admin\IdeaProjects\Movies-App-Test\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;6&quot; parallel=&quot;classes&quot; name=&quot;Movies App Test&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;6&quot; parallel=&quot;classes&quot; name=&quot;MoviesAppTestSuites&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;HomePageTest&quot;/&gt;
+      &lt;class name=&quot;HeaderPageTest&quot;/&gt;
+      &lt;class name=&quot;PopularPageTest&quot;/&gt;
+      &lt;class name=&quot;SearchPageTest&quot;/&gt;
+      &lt;class name=&quot;MovieDetailsTest&quot;/&gt;
+      &lt;class name=&quot;AccountPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MoviesAppTestSuites --&gt;
+&lt;/suite&gt; &lt;!-- Movies App Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Movies_App_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Movies App Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">MoviesAppTestSuites (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Movies_App_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Movies App Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Movies_App_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Movies App Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Movies_App_Test');
+function tableData_Movies_App_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'CheckSearchFunctionality')
+data.setCell(0, 2, 'SearchPageTest')
+data.setCell(0, 3, 12847);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkAccountPage')
+data.setCell(1, 2, 'AccountPageTest')
+data.setCell(1, 3, 7369);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkPopularPageFuctionalities')
+data.setCell(2, 2, 'MovieDetailsTest')
+data.setCell(2, 3, 5281);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkPopularPageSection')
+data.setCell(3, 2, 'PopularPageTest')
+data.setCell(3, 3, 4203);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkPlayBtn')
+data.setCell(4, 2, 'HomePageTest')
+data.setCell(4, 3, 3350);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkTheHeadingTexts')
+data.setCell(5, 2, 'HomePageTest')
+data.setCell(5, 3, 2911);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkContact')
+data.setCell(6, 2, 'HomePageTest')
+data.setCell(6, 3, 2671);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkPopularPageMovies')
+data.setCell(7, 2, 'PopularPageTest')
+data.setCell(7, 3, 2203);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkTheNavBars')
+data.setCell(8, 2, 'HeaderPageTest')
+data.setCell(8, 3, 2007);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkHomePageFuctionalities')
+data.setCell(9, 2, 'MovieDetailsTest')
+data.setCell(9, 3, 1921);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkMoviesDisplay')
+data.setCell(10, 2, 'HomePageTest')
+data.setCell(10, 3, 1671);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testLoginWithEmptyInputs')
+data.setCell(11, 2, 'LoginPageTest')
+data.setCell(11, 3, 1565);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkTheLogoElement')
+data.setCell(12, 2, 'HeaderPageTest')
+data.setCell(12, 3, 1366);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testLoginWithInvalidCredentials')
+data.setCell(13, 2, 'LoginPageTest')
+data.setCell(13, 3, 975);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testLoginWithValidCredentials')
+data.setCell(14, 2, 'LoginPageTest')
+data.setCell(14, 3, 950);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testLoginWithEmptyUserName')
+data.setCell(15, 2, 'LoginPageTest')
+data.setCell(15, 3, 911);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testLoginWithEmptyPassword')
+data.setCell(16, 2, 'LoginPageTest')
+data.setCell(16, 3, 882);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'checkLoginButton')
+data.setCell(17, 2, 'LoginPageTest')
+data.setCell(17, 3, 134);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'checkTheLabelElementTexts')
+data.setCell(18, 2, 'LoginPageTest')
+data.setCell(18, 3, 105);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'checkTheHeadingText')
+data.setCell(19, 2, 'LoginPageTest')
+data.setCell(19, 3, 78);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'checkTheLogo')
+data.setCell(20, 2, 'LoginPageTest')
+data.setCell(20, 3, 20);
+window.suiteTableData['Movies_App_Test']= { tableData: data, tableDiv: 'times-div-Movies_App_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <div id="times-div-Movies_App_Test">
+              </div> <!-- times-div-Movies_App_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Movies_App_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Movies App Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Movies_App_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Movies_App_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MovieDetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PopularPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkLoginButton</span>
+                <span class="method-start">25658 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">25795 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CheckSearchFunctionality</span>
+                <span class="method-start">27641 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkAccountPage</span>
+                <span class="method-start">29842 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PopularPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkPopularPageSection</span>
+                <span class="method-start">35358 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">37212 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">39157 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PopularPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">39568 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">40489 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkTheHeadingTexts</span>
+                <span class="method-start">41680 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HeaderPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42824 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">44592 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MovieDetailsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkHomePageFuctionalities</span>
+                <span class="method-start">46090 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">48012 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">50099 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PopularPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">52226 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkTheHeadingText</span>
+                <span class="method-start">53291 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">53371 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MovieDetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">54229 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">54505 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HeaderPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkTheLogoElement</span>
+                <span class="method-start">55308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">56675 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">60715 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkPlayBtn</span>
+                <span class="method-start">61734 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PopularPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkPopularPageMovies</span>
+                <span class="method-start">64518 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">65085 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PopularPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">66722 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">67106 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MovieDetailsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkPopularPageFuctionalities</span>
+                <span class="method-start">70366 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkTheLabelElementTexts</span>
+                <span class="method-start">72034 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">72140 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">72902 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MovieDetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">75647 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HeaderPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkTheNavBars</span>
+                <span class="method-start">76281 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78288 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkMoviesDisplay</span>
+                <span class="method-start">79256 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">80927 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkTheLogo</span>
+                <span class="method-start">81447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">81468 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">81613 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">81910 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithEmptyInputs</span>
+                <span class="method-start">89061 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">90630 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">90929 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkContact</span>
+                <span class="method-start">91703 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">94374 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithEmptyUserName</span>
+                <span class="method-start">97345 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">98256 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">98530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithEmptyPassword</span>
+                <span class="method-start">103886 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">104769 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">105030 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials</span>
+                <span class="method-start">110845 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">111821 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">112263 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithValidCredentials</span>
+                <span class="method-start">118078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">setdown</span>
+                <span class="method-start">119029 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
