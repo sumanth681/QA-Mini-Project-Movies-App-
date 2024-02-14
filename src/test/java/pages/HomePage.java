@@ -35,8 +35,18 @@ public class HomePage {
         return  playBtn.isDisplayed();
     }
 
-    public  boolean testContactUs(){
+    public  boolean testContactUsSection(){
+
+        WebElement googleIcon = driver.findElement(By.className("google-icon"));
+        WebElement twitterIcon = driver.findElement(By.className("twitter-icon"));
+        WebElement instagramIcon = driver.findElement(By.className("instagram-icon"));
+        WebElement youTubeIcon = driver.findElement(By.className("youtube-icon"));
         WebElement contactUs = driver.findElement(By.className("contact-us-paragraph"));
+
+        boolean are_Visible = googleIcon.isDisplayed() && twitterIcon.isDisplayed() && instagramIcon.isDisplayed() && youTubeIcon.isDisplayed() && youTubeIcon.isDisplayed() && contactUs.isDisplayed();
+        if(are_Visible)
+            return are_Visible;
+
         return contactUs.isDisplayed();
     }
 
@@ -44,9 +54,8 @@ public class HomePage {
     public  boolean checkMoviesSections(){
         List<WebElement> trendingSection =  driver.findElements(By.xpath("html/body/div/div/div[2]/div[1]/div//a"));
         List<WebElement> originalSection = driver.findElements(By.xpath("html/body/div/div/div[2]/div[2]/div//a"));
-        return trendingSection.size() > 0 && originalSection.size() > 0;
+        return !trendingSection.isEmpty() && !originalSection.isEmpty();
     }
-
 
     public void LoginToApplication(String username , String password){
         driver.findElement(USERNAME).sendKeys(username);

@@ -9,6 +9,7 @@ import org.testng.annotations.AfterMethod;
 import pages.AccountPage;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 public class AccountPageTest {
     public  static WebDriver driver;
     AccountPage  accountPage;
@@ -25,6 +26,7 @@ public class AccountPageTest {
     public void setdown() {
         driver.close();
     }
+
 
     @Test
     public void checkAccountPage(){
@@ -54,7 +56,11 @@ public class AccountPageTest {
         WebElement contactUsPara = driver.findElement(By.className("contact-us-paragraph"));
         wait.until(ExpectedConditions.visibilityOf(contactUsPara));
 
+        // Checking Log Out functionality
 
+        logoutButton.click();
+        String LoginPage = driver.getCurrentUrl();
+        Assert.assertEquals(LoginPage,"https://qamoviesapp.ccbp.tech/login","logOut Functionality Failed");
 
     }
 

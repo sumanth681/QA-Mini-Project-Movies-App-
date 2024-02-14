@@ -21,7 +21,6 @@ public class PopularPage {
         PageFactory.initElements(driver, this);
     }
 
-
     public boolean checkPopularPageSection(){
         WebElement PopularSec = driver.findElement(By.linkText("Popular"));
         PopularSec.click();
@@ -35,7 +34,6 @@ public class PopularPage {
         List<WebElement>  popularPageList = driver.findElements(By.className("movie-icon-item"));
         return  popularPageList.size();
     }
-
 
     public void LoginToApplication(String username , String password){
         driver.findElement(USERNAME).sendKeys(username);

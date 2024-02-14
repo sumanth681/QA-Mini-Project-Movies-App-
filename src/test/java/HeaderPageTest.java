@@ -1,3 +1,5 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import pages.HeaderPage;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
@@ -25,27 +27,54 @@ public class HeaderPageTest {
     }
 
 
-
     @Test(priority = 1)
     public void checkTheLogoElement(){
-        headerpage.enterUsername("rahul");
-        headerpage.enterPassword("rahul@2021");
-        headerpage.clickLoginButton();
+        headerpage.LoginToApplication("rahul","rahul@2021");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
+
         Assert.assertTrue(headerpage.isLogoElementLocated() ,"Logo Element Not Found");
     }
 
     @Test(priority=2)
     public void checkTheNavBars() {
-        headerpage.enterUsername("rahul");
-        headerpage.enterPassword("rahul@2021");
-        headerpage.clickLoginButton();
+        headerpage.LoginToApplication("rahul","rahul@2021");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
+
         Assert.assertTrue(headerpage.isHomeNavbarDisplayed() , "Home Page NavBar is Not Working As Expected" );
         Assert.assertTrue(headerpage.isPopularNavBarDisplayed(), "Popular Page NavBar is Not Working As Expected" );
         Assert.assertTrue(headerpage.isAccountNavBarDisplayed() , "Account Page NavBar is Not Working As Expected" );
+        Assert.assertTrue(headerpage.isSerachNavBarDisplayed(),    "Search Button Navbar is Not Working As Expected");
 
     }
 
+    @Test(priority = 3)
+    public void checkTheNavigationFunctionalities(){
+        headerpage.LoginToApplication("rahul","rahul@2021");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
 
+        // Home Header Section
+        WebElement homeLink = driver.findElement(By.xpath("//a[contains(text(), 'Home')]"));
+        homeLink.click();
+        String homePage = driver.getCurrentUrl();
+        Assert.assertEquals(homePage,"https://qamoviesapp.ccbp.tech/","Not Navigated to Home Page");
+
+        // Popular Header Section
+        WebElement popularHeaderSection = driver.findElement(By.xpath("//a[contains(text(), 'Popular')]"));
+        popularHeaderSection.click();
+        String popularPage = driver.getCurrentUrl();
+        Assert.assertEquals(popularPage,"https://qamoviesapp.ccbp.tech/popular","Not Navigated to Popular Page");
+
+        // Search Header Section
+        WebElement searchHeaderSection =  driver.findElement(By.className("search-empty-button"));
+        searchHeaderSection.click();
+        String searchPage = driver.getCurrentUrl();
+        Assert.assertEquals(searchPage,"https://qamoviesapp.ccbp.tech/search","Not Navigated to Search Page");
+
+        // Account Header Section
+        WebElement accountHeaderSection = driver.findElement(By.className("avatar-button"));
+        accountHeaderSection.click();
+        String accountPage = driver.getCurrentUrl();
+        Assert.assertEquals(accountPage,"https://qamoviesapp.ccbp.tech/account","Not Navigated to Search Page");
+
+    }
 }

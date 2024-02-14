@@ -20,7 +20,17 @@ public class SearchPage {
         PageFactory.initElements(driver, this);
     }
 
-    public  int searchFunctionalities(String Movie){
+    public  int searchAvatarMovieFunctionalities(String Movie){
+
+        WebElement searchInput =  driver.findElement(By.id("search"));
+        searchInput.sendKeys(Movie);
+
+        List<WebElement> movieList = driver.findElements(By.className("movie-icon-item"));
+        return movieList.size();
+    }
+
+
+    public  int searchSquidGameMovieFunctionalities(String Movie){
 
         WebElement searchInput =  driver.findElement(By.id("search"));
         searchInput.sendKeys(Movie);

@@ -14,11 +14,10 @@ public class HeaderPage {
     By PASSWORD=By.id("passwordInput");
 
 
-
     By HomeNavBar=By.linkText("Home");
     By PopularNavBar=By.linkText("Popular");
     By AccountNavBar = By.className("avatar-button");
-    By websiteLogp = By.className("website-logo");
+    By websiteLogo = By.className("website-logo");
 
     public HeaderPage(WebDriver driver) {
         this.driver=driver;
@@ -26,16 +25,8 @@ public class HeaderPage {
     }
 
 
-    public void clickLoginButton(){ driver.findElement(LoginButton).click(); }
-    public void enterUsername(String username){
-        driver.findElement(USERNAME).sendKeys(username);
-    }
-    public void enterPassword(String password){
-        driver.findElement(PASSWORD).sendKeys(password);
-    }
-
     public boolean isLogoElementLocated(){
-        return driver.findElement(websiteLogp).isDisplayed();
+        return driver.findElement(websiteLogo).isDisplayed();
     }
 
     public boolean isHomeNavbarDisplayed() {
@@ -48,6 +39,14 @@ public class HeaderPage {
         return  driver.findElement(AccountNavBar).isDisplayed();
     }
 
+    public  boolean isSerachNavBarDisplayed(){return driver.findElement(AccountNavBar).isDisplayed();}
+
+
+    public void LoginToApplication(String username , String password){
+        driver.findElement(USERNAME).sendKeys(username);
+        driver.findElement(PASSWORD).sendKeys(password);
+        driver.findElement(LoginButton).click();
+    }
 
 
 }

@@ -21,11 +21,12 @@ public class LoginFunctionalitySteps {
     public void setup(){
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver-win32\\chromedriver.exe");
         driver = new ChromeDriver();
+        driver.get("https://qamoviesapp.ccbp.tech");
     }
 
     @Given("I am on login Page")
     public void iAmOnLoginPage(){
-        driver.get("https://qamoviesapp.ccbp.tech/login");
+        driver.get("https://qamoviesapp.ccbp.tech");
 
     }
 

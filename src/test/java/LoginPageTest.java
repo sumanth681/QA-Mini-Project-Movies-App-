@@ -93,17 +93,28 @@ public class LoginPageTest {
         Assert.assertEquals(errmsg,"*Username or password is invalid","Error text with empty Password input field does not match");
     }
     @Test(priority = 4)
-    public void  testLoginWithInvalidCredentials(){
-        loginPage.LoginToApplication("rahull","rahul@2023");
+    public void  testLoginWithInvalidPassword(){
+        loginPage.LoginToApplication("rahul","rahul2023");
 
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
         String errmsg = loginPage.errorMessage();
-       Assert.assertEquals(errmsg,"*invalid username","Error Username or  Password input fields does not match");
+       Assert.assertEquals(errmsg,"*username and password didn't match","Error Username or  Password input fields does not match");
 
 
     }
 
+
     @Test(priority = 5)
+    public void  testLoginWithInvalidUsername(){
+        loginPage.LoginToApplication("rrahul","rahul@2021");
+
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        String errmsg = loginPage.errorMessage();
+        Assert.assertEquals(errmsg,"*invalid username","Error Username or  Password input fields does not match");
+
+
+    }
+    @Test(priority = 6)
     public void  testLoginWithValidCredentials(){
         loginPage.LoginToApplication("rahul","rahul@2021");
 

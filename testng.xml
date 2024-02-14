@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Movies App Test" parallel="classes" thread-count="6">
+<suite name="Movies App Test" parallel="classes" thread-count="7">
     <test name="MoviesAppTestSuites">
         <classes>
             <class name="LoginPageTest"/>
